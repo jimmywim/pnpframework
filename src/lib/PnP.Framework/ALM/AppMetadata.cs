@@ -43,5 +43,9 @@ namespace PnP.Framework.ALM
         /// Title of the solution
         /// </summary>
         public string Title { get; set; }
+        /// <summary>
+        /// The Solution Package ID
+        /// </summary>
+        public Guid ProductId { get; set; }
     }
 }
