@@ -618,7 +618,9 @@ namespace PnP.Framework.Modernization.Publishing
                                                 }
                                                 catch (Exception ex)
                                                 {
-                                                    LogError(string.Format(LogStrings.Error_TransformingTaxonomyField, fieldToProcess.Name), LogStrings.Heading_CopyingPageMetadata, ex);
+                                                    LogError(ex.ToString(), LogStrings.Heading_CopyingPageMetadata, ex);
+
+                                                    //LogError(string.Format(LogStrings.Error_TransformingTaxonomyField, fieldToProcess.Name), LogStrings.Heading_CopyingPageMetadata, ex);
                                                 }
                                             }
                                         }
